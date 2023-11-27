@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:provider_ex02/src/component/category_movie_list.dart';
 import 'package:provider_ex02/src/controller/movie_controller.dart';
 
 class App extends StatefulWidget {
@@ -61,7 +62,8 @@ class _AppState extends State<App> {
               return const Center(child: CircularProgressIndicator());
             }
           },
-        )
+        ),
+        const CategoryMovieList(),
       ]),
     );
   }

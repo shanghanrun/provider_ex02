@@ -50,7 +50,7 @@ class Movie {
       voteCount: json['vote_count'] as int?,
     );
   }
-  String get postUrl => 'https://image.tmdb.org/t/p/w500/$posterPath';
+  String get posterUrl => 'https://image.tmdb.org/t/p/w500/$posterPath';
 
   @override
   String toString() =>
